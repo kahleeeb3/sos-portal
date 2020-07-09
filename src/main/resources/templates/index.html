@@ -28,6 +28,11 @@
         <th>Georgia</th>
       </tr>
       <tr>
+        <td>Kindergarten</td>
+        <td>Math</td>
+        <th>Indiana</th>
+      </tr>
+      <tr>
         <td>kindergarten</td>
         <td>English</td>
         <th>Indiana</th>
@@ -58,6 +63,16 @@ $(document).ready(function(){
   });
 });
 </script>
+<script>
+  $(document).ready(function(){
+    $("#myInput2").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#myTable tr").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+  });
+  </script>
 
 </body>
 </html>
