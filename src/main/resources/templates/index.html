@@ -12,6 +12,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
+
+  .responsive {
+    width: 25%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+  }
+  .responsive iframe {
+    position: absolute;
+    width: 25%;
+    height: 25%;
+  }
+
   body {
     position: relative; 
   }
@@ -199,8 +212,8 @@ function closeForm() {
       </div>
       <div id="menu1" class="tab-pane fade">
         <h3>Menu 1</h3>
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/zpOULjyy-n8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="responsive">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/zpOULjyy-n8" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
       <div id="menu2" class="tab-pane fade">
